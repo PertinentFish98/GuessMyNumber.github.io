@@ -60,7 +60,7 @@ document.querySelector('.again').addEventListener('click', function () {
     document.querySelector('.score').textContent = '10';
     document.querySelector('.guess').value = '';
   } else {
-    displayMessage = 'Choose a number at least 1 time to begin!';
+    displayMessage('Choose a number at least 1 time to begin!');
   }
   document.querySelector('.avgscore').textContent = avg;
   score = 10;
