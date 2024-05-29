@@ -1,7 +1,7 @@
 'use strict';
 
 let secretnumber = Math.trunc(Math.random() * 20) + 1;
-let score = 10;
+let score = 5;
 let i = 0;
 let j = 0;
 let sum = 0;
@@ -57,11 +57,11 @@ document.querySelector('.again').addEventListener('click', function () {
     document.querySelector('body').style.backgroundColor = '#222';
     document.querySelector('.number').style.width = '15rem';
     displayMessage('Start guessing...');
-    document.querySelector('.score').textContent = '10';
+    document.querySelector('.score').textContent = '5';
     document.querySelector('.guess').value = '';
   } else {
     displayMessage('Choose a number at least 1 time to begin!');
   }
   document.querySelector('.avgscore').textContent = avg;
-  score = 10;
+  score = 5
 });
